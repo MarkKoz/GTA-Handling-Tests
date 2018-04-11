@@ -23,5 +23,9 @@ result will remain displayed until the timer is toggled off.
 ### Installation
 Move `HandlingTests.asi` to game's root directory (i.e. where `GTAV.exe` is).
 
+### Developing
+Download the [Script Hook V SDK](http://www.dev-c.com/gtav/scripthookv/) and
+move the archive's contents into `solution-root/libs/ScriptHookV/`.
+
 ### Credits
 Alexander Blade - Script Hook V SDK

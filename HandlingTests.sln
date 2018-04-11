@@ -5,20 +5,25 @@ VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HandlingTests", "HandlingTests\HandlingTests.vcxproj", "{2100495A-C23E-4520-B1E3-E4ED5D5D3B38}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Script Hook V", "Script Hook V", "{0A1CAB22-5015-4A75-A762-7142B6B0C4C1}"
-	ProjectSection(SolutionItems) = preProject
-		include\enums.h = include\enums.h
-		include\main.h = include\main.h
-		include\nativeCaller.h = include\nativeCaller.h
-		include\natives.h = include\natives.h
-		include\types.h = include\types.h
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AC15B013-E96E-4858-8371-603F866D366D}"
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
+		LICENSE = LICENSE
 		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{19612966-C68F-4868-94BE-E879EED8AD4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScriptHookV", "ScriptHookV", "{29848B78-91B6-43EE-997F-44503ADCF07A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "inc", "inc", "{AA9B8E1C-CA00-4DAE-95EA-E013B8536A37}"
+	ProjectSection(SolutionItems) = preProject
+		libs\ScriptHookV\inc\enums.h = libs\ScriptHookV\inc\enums.h
+		libs\ScriptHookV\inc\main.h = libs\ScriptHookV\inc\main.h
+		libs\ScriptHookV\inc\nativeCaller.h = libs\ScriptHookV\inc\nativeCaller.h
+		libs\ScriptHookV\inc\natives.h = libs\ScriptHookV\inc\natives.h
+		libs\ScriptHookV\inc\types.h = libs\ScriptHookV\inc\types.h
 	EndProjectSection
 EndProject
 Global
@@ -40,5 +45,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{29848B78-91B6-43EE-997F-44503ADCF07A} = {19612966-C68F-4868-94BE-E879EED8AD4A}
+		{AA9B8E1C-CA00-4DAE-95EA-E013B8536A37} = {29848B78-91B6-43EE-997F-44503ADCF07A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CEA09B5-8A0D-48DB-A2BD-F665372BA88D}
 	EndGlobalSection
 EndGlobal
